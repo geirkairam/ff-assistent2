@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LAN Settings</title>
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="ff-assistent_script.js"></script>
+<link href="cascade.css" rel="stylesheet" />
+<link href="ff-assistent.css" rel="stylesheet" />
+</head>
+<body>
+	<form>
+		<div id="lanSection" class="section">
+			<h3>LAN Configuration</h3>
+
+			<div class="cbi-value">
+				<label class="cbi-value-title" for="ip4">IPv4-Address<span
+					class="requiered">*</span></label>
+				<div class="cbi-value-field">
+					<input id="ip4" name="password" value="192.168.1.1" />
+				</div>
+			</div>
+			<div class="cbi-value">
+				<label class="cbi-value-title" for="netmask">IPv4-Netmask<span
+					class="requiered">*</span></label>
+				<div class="cbi-value-field">
+					<input id="netmask" name="confirmation" value="255.255.255.0" />
+				</div>
+			</div>
+			<div class="cbi-value">
+				<label class="cbi-value-title" for="gateway">IPv4-Gateway</label>
+				<div class="cbi-value-field">
+					<input id="gateway" name="confirmation" />
+				</div>
+			</div>
+
+			<div class="alert-message">
+				<p class="info">
+				<p>Hier kannst du dein locales Netzwerk konfigieren, &uuml;ber
+					das dein Router bei dir zu Hause erreichbar ist, wenn du ein
+					Netzwerkkabel anschlie&szlig;t. Du kannst hier auch einfach die
+					Standardwerte lassen und auf weiter klicken, wenn du kein eigenes
+					Netzwerk zu Hause aufgebaut hast, oder nicht weißt was du eintragen
+					sollst..</p>
+				</p>
+			</div>
+			<div class="cbi-page-actions">
+				<a class="cbi-button cbi-button-save" href="generalSettings.html">Zur&uuml;ck</a>
+				<a class="cbi-button cbi-button-save" href="decisionPage.html">Weiter</a>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

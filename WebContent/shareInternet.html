@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="ff-assistent_script.js"></script>
+<link href="cascade.css" rel="stylesheet" />
+<link href="ff-assistent.css" rel="stylesheet" />
+</head>
+<body>
+	<form>
+		<div class="section">
+			<div id="internetSection" class="section">
+				<h3>Internet Configuration</h3>
+				<div class="cbi-value">
+					<label class="cbi-value-title" for="bandbreitedown">VPN
+						Datei hochladen<span class="requiered">*</span>
+					</label>
+					<div class="cbi-value-field">
+						<input type="file" />
+					</div>
+				</div>
+				<div class="cbi-value">
+					<label class="cbi-value-title" for="bandbreitedown">Upload
+						Bandbreite begrenzen</label>
+					<div class="cbi-value-field">
+						<select id="bandbreitedown" class="cbi-input-select">
+							<option value=""></option>
+							<option value="1000">1 MBit/s</option>
+							<option value="10000">10 MBit/s</option>
+							<option selected value="100000">100 MBit/s</option>
+							<option value="">-- custom --</option>
+						</select>
+					</div>
+				</div>
+				<div class="cbi-value">
+					<label class="cbi-value-title" for="bandbreiteup">Download
+						Bandbreite begrenzen</label>
+					<div class="cbi-value-field">
+						<select id="bandbreiteup" class="cbi-input-select">
+							<option value=""></option>
+							<option value="1000">1 MBit/s</option>
+							<option value="10000">10 MBit/s</option>
+							<option selected value="100000">100 MBit/s</option>
+							<option value="">-- custom --</option>
+						</select>
+					</div>
+				</div>
+				<div class="alert-message">
+					<p class="info">
+						Falls du es noch nicht gemacht hast, solltest du dir jetzt einen
+						FreifunkVPN Zugang auf der <a target="blank"
+							href="http://lists.berlin.freifunk.net/cgi-bin/mailman/listinfo/berlin">Mailingliste</a>
+						beantragen. Wenn du die Datei erhalten hast, lade sie hier hoch.
+						Wenn du m&ouml;chtest kannst du noch Upload- und Downloadrate
+						begrenzen.
+					</p>
+				</div>
+				<div class="cbi-page-actions">
+					<a class="cbi-button cbi-button-save" href="decisionPage.html">Zur&uuml;ck
+					</a> <a class="cbi-button cbi-button-save" href="ffsettings.html">Weiter
+					</a>
+				</div>
+			</div>
+
+
+		</div>
+	</form>
+</body>
+</html>

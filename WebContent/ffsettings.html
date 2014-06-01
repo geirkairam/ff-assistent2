@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Share Internet Settings</title>
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="ff-assistent_script.js"></script>
+<link href="cascade.css" rel="stylesheet" />
+<link href="ff-assistent.css" rel="stylesheet" />
+</head>
+<body>
+	<form>
+		<div id="radio0MeshSection" class="section">
+			<h3>Radio 0 Mesh Section</h3>
+			<div class="cbi-value">
+				<label class="cbi-value-title" for="radio0meship">RADIO0
+					Mesh IP<span class="requiered">*</span>
+				</label>
+				<div class="cbi-value-field">
+					<input type="text" id="radio0meship" name="confirmation" />
+				</div>
+			</div>
+			<div class="alert-message">
+				<p class="info">
+					Trage hier die IP ein die du dir auf der <a
+						href="http://ip.berlin.freifunk.net/index.html">IP-Registrierungsseite</a>
+					ausgesucht hast. &Uuml;ber diese Adressse verbindet sich dein
+					Router mit anderen Routern in deiner N&auml;he. Sp&auml;ter kannst
+					du dir die Einstellungen unter Network > Interfaces anschauen.
+				</p>
+			</div>
+
+			<div class="cbi-value">
+				<label class="cbi-value-title" for="ipaddresses">Addressraum</label>
+				<div class="cbi-value-field">
+					<input id="ipaddresses" name="password" />
+				</div>
+			</div>
+			<div class="cbi-value">
+				<label class="cbi-value-title" for="ssid">Netzwerkname<span
+					class="requiered">*</span></label>
+				<div class="cbi-value-field">
+					<input id="ssid" name="confirmation" value="berlin.freifunk.net" />
+				</div>
+			</div>
+
+			<div class="alert-message">
+				<p class="info">
+					Hier kannst du den Access Point f&uuml;r Clients deines
+					Freifunknetzwerkes konfigurieren. Du kannst das erste Feld
+					freilassen, dann bekommen Clients automatisch eine IP zugewiesen.
+					Du kannst dir allerdings auch einen Addressreaum registrieren und
+					somit steuern welche IPs dein Router verteilen wird. Ein <a
+						href="http://www.heise.de/netze/tools/netzwerkrechner/">Netzwerkrechner</a>
+					hilft beim berechnen der richtigen Netzwerkaddresse und des
+					CIDR-Suffix.
+				</p>
+				<p>Achte beim Vergeben des Netzwerknamens (z.B.
+					meinname.freifunk.net) daruf, dass du unterschiedliche Namen
+					vergibst, falls Sie mehrere Router in deiner Umgebegung betreibst,
+					da ein Client mit seiner IP nicht die Access Points wechseln kann.</p>
+				<p>Wenn die Felder leer bleiben wird ein Netzwerk automatisch
+					nach den vorgaben aus dem Feld Freifunk Comunity erstellt und der
+					Netzwerkname berechnet sich aus AP+Kanal+SSID der Freifunk
+					Community,</p>
+			</div>
+
+			<div class="cbi-page-actions">
+				<a class="cbi-button cbi-button-save" href="decisionPage.html">Zur&uuml;ck</a>
+				<a class="cbi-button cbi-button-save" href="restart.html">Weiter</a>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
